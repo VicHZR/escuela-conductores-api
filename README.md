@@ -121,6 +121,7 @@ Configurar la base de datos PostgreSQL
 Ejecutar el proyecto:
 
 mvn clean spring-boot:run
+```
 
 📘 Notas
 

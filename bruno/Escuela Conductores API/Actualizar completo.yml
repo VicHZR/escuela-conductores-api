@@ -1,0 +1,22 @@
+info:
+  name: Actualizar completo
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{url}}/api/departamentos/1"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "LIMA METROPOLITANA",
+        "estado": "A"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Paginación en BD
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{url}}/api/departamentos/paginado?page=0&size=2"
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "2"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

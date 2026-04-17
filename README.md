@@ -8,6 +8,7 @@
 ![HATEOAS](https://img.shields.io/badge/REST-HATEOAS-purple)
 ![License](https://img.shields.io/badge/License-Educational-lightgrey)
 ![License](https://github.com/VicHZR/escuela-conductores-api/actions/workflows/ci.yml/badge.svg)
+![License](https://github.com/VicHZR/escuela-conductores-api/actions/workflows/ci-postgres.yml/badge.svg)
 
 ---
 

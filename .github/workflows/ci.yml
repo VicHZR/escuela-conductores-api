@@ -2,16 +2,18 @@ name: CI - Build (No Tests)
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Java 21
@@ -21,6 +23,5 @@ jobs:
           java-version: 21
           cache: maven
 
-      - name: Build with Maven (skip tests)
+      - name: Build project with Maven
         run: mvn -B clean package -DskipTests
-``

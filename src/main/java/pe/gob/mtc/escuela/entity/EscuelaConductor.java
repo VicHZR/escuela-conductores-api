@@ -9,8 +9,8 @@ public class EscuelaConductor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;   // ✅ INTEGER (NO Long)
-
+    private Integer id;   
+    
     @Column(name = "razon_social", nullable = false, length = 200)
     private String razonSocial;
 

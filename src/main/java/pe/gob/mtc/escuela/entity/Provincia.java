@@ -8,7 +8,7 @@ public class Provincia {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;   // ✅ INTEGER
+    private Integer id;   
 
     @Column(nullable = false, length = 100)
     private String nombre;
